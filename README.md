@@ -87,9 +87,9 @@ Each component of the UI can be assigned attributes such as the layout_width, la
 **MainActivity.java**
 
 ```java
-EditText TextInput; // create an object of EditText class -- this is the object which is used to get the user input
-TextView TextOutput; // create an object of TextView class -- this is the object which is used to display the output text in the screen
-Button writebtn; // create an object of Button class -- this object is used to define actions to take place when user interacts with the button
+EditText TextInput; // create an object of EditText class --  object used to get the user input
+TextView TextOutput; // create an object of TextView class -- object  used to display the output text in the screen
+Button writebtn; // create an object of Button class -- object  used to define actions to take place when user interacts with the button
 
 @Override // annotation which indicates that a method declaration is intended to override a method declaration in a supertype
 protected void onCreate(Bundle savedInstanceState) { // this is the first function that is called when the activity is initialized. Usually setContentView(int) is called here followed by other initializations.
@@ -116,3 +116,91 @@ public void onClick(View v){
 Following image shows the various callback methods that can be implemented to perform actions during different states of an activity.
 
 ![Activity life cycle](https://developer.android.com/images/activity_lifecycle.png)
+
+**Use Log statements to verify this activity lifecycle**
+
+---
+
+### Sine Wave demo - 1
+
+```Java
+Button PlayBtn;
+Button StopBtn;
+AudioTrack Track;
+boolean isplaying = false;
+int Fs = 44100;
+int  buffLength = AudioTrack.getMinBufferSize(Fs, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+    PlayBtn = (Button) findViewById(R.id.PlayBtn);
+    PlayBtn.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            if (!isplaying){
+                (new Thread() {
+                    @Override
+                    public void run() {
+                        initTrack();
+                        startPlaying();
+                        playback();
+                    }
+                }).start();
+            }
+
+        }
+    });
+
+    StopBtn = (Button) findViewById(R.id.StopBtn);
+    StopBtn.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            stopPlaying();
+        }
+    });
+}
+
+private void initTrack(){
+
+    Track = new AudioTrack(AudioManager.MODE_NORMAL,
+            Fs,
+            AudioFormat.CHANNEL_OUT_MONO,
+            AudioFormat.ENCODING_PCM_16BIT,
+            buffLength,
+            AudioTrack.MODE_STREAM);
+}
+
+private void startPlaying(){
+    Track.play();
+    isplaying=true;
+}
+
+private void playback(){
+    short[] frame_out= new short[buffLength];
+    int amplitude = (int) (32767) ;
+    int frequency = 440;
+    double twopi = 8. * Math.atan(1.);
+    double phase = 0.0;
+    while (isplaying){
+        for (int i = 0; i < buffLength; i++) {
+            frame_out[i] = (short) (amplitude * Math.sin(phase));
+            phase += twopi * frequency / Fs;
+            if (phase>twopi){
+                phase -= twopi;
+            }
+        }
+        Track.write(frame_out, 0, buffLength);
+    }
+}
+
+private void stopPlaying(){
+    if (isplaying){
+        isplaying=false;
+        Track.stop();
+        Track.release();
+    }
+}
+```
