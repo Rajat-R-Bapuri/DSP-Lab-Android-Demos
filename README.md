@@ -45,7 +45,7 @@ Palette (marked in red box) contains all the basic components that can be used t
 
 ### Simple Text Edit demo
 
-Use the code provided in the TextEditDemo. Following snippet explain what the `java` and `XML` code is doing.
+Use the code provided in the TextEditDemo. Following snippets explain what the `java` and `XML` code are doing.
 
 **activity_main.XML**
 
@@ -120,4 +120,15 @@ Following image shows the various callback methods that can be implemented to pe
 **Use Log statements to verify this activity lifecycle**
 
 ---
-### [Accelerometer Audio](./Desmos/AccelerometerAudio/README.md)
+
+Following are the list of demos available in this repository. Each demo has a readme and well commented code.
+(Click on the links of each demo for README)
+
+- [Text Edit Demo](./Demos/Text_Edit_Demo/README.md)
+- [Text Image Demo](./Demos//README.md)
+- [Slider Demo](./Demos/Slider_Demo/README.md)
+- [Sine Wave Demo 1](./Demos/Sine_Wave_Demo1/README.md)
+- [Sine Wave Demo 2](./Demos/Sine_Wave_Demo2/README.md)
+- [Sine Wave Demo 3](./Demos/Sine_Wave_Demo3/README.md)
+- [Sine Wave Demo 4](./Demos/Sine_Wave_Demo4/README.md)
+- [Accelerometer Audio](./Demos/Accelerometer_Sine_Wave/README.md)
