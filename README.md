@@ -1,3 +1,11 @@
+# Contents
+
+1. [Android Basics](#android-basics)
+2. [Getting started with Android Application Development](#getting-started-with-android-application-development)
+3. [Building the UI](building-the-ui)
+4. [Android activity life cycle](android-activity-life-cycle)
+
+
 # Android Basics
 ### Role of `Java` and `XML` in Android.
 1. `XML` (eXtensible Markup Language): `XML` is used for declaring and defining layouts in android. It can be said that `XML` defines how the UI looks like for the application you are developing. Each element in the `XML` layout has an unique 'id' which can be used to
@@ -125,7 +133,7 @@ Following are the list of demos available in this repository. Each demo has a re
 (Click on the links of each demo for README)
 
 - [Text Edit Demo](./Demos/Text_Edit_Demo/README.md)
-- [Text Image Demo](./Demos//README.md)
+- [Text Image Demo](./Demos/Text_Image_Demo/README.md)
 - [Slider Demo](./Demos/Slider_Demo/README.md)
 - [Sine Wave Demo 1](./Demos/Sine_Wave_Demo1/README.md)
 - [Sine Wave Demo 2](./Demos/Sine_Wave_Demo2/README.md)
