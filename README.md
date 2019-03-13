@@ -2,8 +2,8 @@
 
 1. [Android Basics](#android-basics)
 2. [Getting started with Android Application Development](#getting-started-with-android-application-development)
-3. [Building the UI](building-the-ui)
-4. [Android activity life cycle](android-activity-life-cycle)
+3. [Building the UI](#building-the-ui)
+4. [Android activity life cycle](#android-activity-life-cycle)
 
 
 # Android Basics
@@ -140,3 +140,10 @@ Following are the list of demos available in this repository. Each demo has a re
 - [Sine Wave Demo 3](./Demos/Sine_Wave_Demo3/README.md)
 - [Sine Wave Demo 4](./Demos/Sine_Wave_Demo4/README.md)
 - [Accelerometer Audio](./Demos/Accelerometer_Sine_Wave/README.md)
+
+---
+# OpenCV
+
+[OpenCV setup](./OpenCV/README.md)
+
+// TODO opencv demos
