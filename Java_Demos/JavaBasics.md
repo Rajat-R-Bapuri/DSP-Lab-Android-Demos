@@ -8,7 +8,7 @@ This section provides basics of Java so that you can understand how to write log
 
 [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.
 
-Have a look at primitive data types in Java [here](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+Have a look at primitive data types in Java [here.](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 
 [Official Java tutorial by Oracle.](https://docs.oracle.com/javase/tutorial/java/index.html)
 
@@ -16,7 +16,7 @@ Have a look at primitive data types in Java [here](https://docs.oracle.com/javas
 
 ```java
 public class Hello // create a class called as Hello
-// in Java every line of code has to be inside a class
+// In Java every line of code has to be inside a class
 {
 
     public static void main(String[] args) // entry point to program;
