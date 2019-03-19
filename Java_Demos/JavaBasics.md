@@ -10,11 +10,11 @@ This section provides basics of Java so that you can understand how to write log
 
 Have a look at primitive data types in Java [here](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 
-[Offcial Java tutorial by Oracle.](https://docs.oracle.com/javase/tutorial/java/index.html)
+[Official Java tutorial by Oracle.](https://docs.oracle.com/javase/tutorial/java/index.html)
 
 ## Hello world!
 
-```Java
+```java
 public class Hello // create a class called as Hello
 // in Java every line of code has to be inside a class
 {
@@ -102,7 +102,133 @@ public class fib {
 
 The syntax of Java is similar to C or C++.
 
+(With some changes to above Java codes, they can be used in Android!
+But in case of Android App, it is not preferred to use `System.out.print` statements.
+Instead we use Log to generate logs in Android App.
+Log statements are used while debugging Android Applications.)
+
 ## Java for Android Development
 
-With some changes to above Java codes, they can be used in Android!
-But in case of Android App, it is not preferred to use `System.out.print` statements
+1. Let us first create a Hello World Android App to start learning Java for Android.
+To start with, first create an [Empty android project](../README.md/#creating-a-new-empty-android-project).
+
+2. After creating an empty project, you will see the Android layout has a TextView which says Hello World!
+
+You must be able to see following `Java` and `XML` codes in the empty project.
+
+### MainActivity.java
+
+```java
+package com.example.myapplication;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+```
+
+### activity_main.xml
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+```
+
+Now let us start making changes to above default `Java` and `XML` codes and write an Android application that can generate Fibonacci series.
+We will not display the Fibonacci series in app layout, but display it in logs by using the Log utility.
+
+[More information about log utility](https://developer.android.com/reference/android/util/Log)
+
+Make the following changes to **MainActivity.java**.
+This code displays fibonacci series in the Logcat.
+Intention of this demo is to to get started with basic Android app and show how to use the Log statements.
+
+```java
+package com.example.myapplication;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Log; // imoport log utility
+
+public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "MyActivity";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        int N = 15; // get the 10th fibonacci number
+        Log.d(TAG, "The 10th Fibonacci number is " + nFib(N));
+
+    }
+
+    // write a method to generate the Nth Fibonacci number
+    static long nFib(int N) // note the private keyword which says
+    // only the members of the class 'fib'
+    // can access this function
+    {
+        if (N < 0) {
+            return -1; // return -1 if N is negative
+        } else if (N == 0 || N == 1 || N == 2) {
+            return 1;
+        } else {
+            long result[] = new long[N]; // long is used to avoid overflow for bigger N
+            result[0] = result[1] = 1; // first two Fibonacci numbers
+
+            // generate the fibonacci sequence and store in the array
+            for (int i = 2; i <= N - 1; i++) {
+                result[i] = result[i - 1] + result[i - 2];
+            }
+
+            for (long res : result) // simple way to traverse arrays
+                Log.d(TAG, String.valueOf(res)); // print the generated fibonacci series
+
+            return result[N - 1]; // return the nth Fibonacci number
+        }
+    }
+}
+
+```
+
+No changes to be made to **activity_main.xml** as the fibonacci series will be displayed as logs in Logcat.
+
+## How to look into Logcat
+
+After running the Fibonacci app, open Logcat which can be located at the bottom bar of the Android studio.
+
+The reason the demo uses Logcat is because the errors in the App are displayed in the logs and it is important to learn on how to read the logs and debug the app. Adding your own log statements helps in app make debugging easier.
+
+A particular category of logs can be seen in Logcat by selecting the category beside the search bar.
+Following image shows how to use Logcat.
+
+![logcat1](../images/logcat1.png)
+
+You can search for the specific debug messages by searching for the TAG strings which are used in the Log statements.
+An example to search for the Fibonacci sequence logged is as follows:
+
+![logcat2](../images/logcat2.png)
