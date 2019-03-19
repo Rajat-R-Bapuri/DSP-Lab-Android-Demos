@@ -61,34 +61,34 @@ If you do not have an Android phone to run the apps you develop, you can try to 
 
 1. Click on the Run app button in android studio (shown below in red).
 
-    ![run_app_button](./images/run_app_button.png)
+![run_app_button](./images/run_app_button.png)
 
 2. You must see the following dialog box.
 
-    ![deployment_target 1](./images/deployment_target1.png)
+![deployment_target 1](./images/deployment_target1.png)
 
     Click on `Create New Virtual Device`
 
 3. In the next screen select the Android phone on which you wish to run the apps.
 
-    ![avd_config1](./images/avd_config1.png)
+![avd_config1](./images/avd_config1.png)
 
 4. On the next screen select the android version which should be emulated.
 (Download android images if they were not downloaded before)
 
-    ![avd_config2](./images/avd_config2.png)
+![avd_config2](./images/avd_config2.png)
 
 5. In the following screen give the  emulator a name and select other configurations and click on finish.
 
-    ![avd_config3](./images/avd_config3.png)
+![avd_config3](./images/avd_config3.png)
 
 6. Select the created emulator in the screen shown below and click on ok.
 
-    ![select_emulator](./images/select_emulator.png)
+![select_emulator](./images/select_emulator.png)
 
 7. After the emulator is selected in previous step, a virtual Android device pops up and starts to boot. After the boot process is over you can see you app open up automatically. A Hello World app on emulator should appear similar to the image below.
 
-    ![emulator](./images/emulator.png)
+![emulator](./images/emulator.png)
 
 ---
 
