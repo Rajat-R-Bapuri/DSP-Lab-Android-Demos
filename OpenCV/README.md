@@ -43,40 +43,40 @@ Following steps will guide you through to fix the import errors.
 
 12. Change the **targetSdkVersion** to match with the **compileSdkVersion**. An example is as follows:
 
-```
-apply plugin: 'com.android.library'
+    ```gradle
+    apply plugin: 'com.android.library'
 
-android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
+    android {
+        compileSdkVersion 28
+        buildToolsVersion "28.0.3"
 
-    defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 28
-    }
+        defaultConfig {
+            minSdkVersion 8
+            targetSdkVersion 28
+        }
 
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            }
         }
     }
-}
-```
+    ```
 
 13. After making the changes to the gradle file, navigate to the manifest file of OpenCV which in the location as shown below:
 ![nav_opencv_manifest](../images/nav_opencv_manifest.png)
 
 14. Make changes to OpenCV manifest file by **removing** the `<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="21" />` line. The final manifest file should look something as follows:
 
-```XML
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="org.opencv"
-      android:versionCode="3430"
-      android:versionName="3.4.3">
-</manifest>
-```
+    ```XML
+    <?xml version="1.0" encoding="utf-8"?>
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="org.opencv"
+        android:versionCode="3430"
+        android:versionName="3.4.3">
+    </manifest>
+    ```
 
 15. Save all the changes and click on the sync now button which appears at the top as shown below:
 
@@ -123,6 +123,7 @@ A example is shown below.
 ![rename_opencv_libs](../images/rename_opencv_libs.png)
 
 Now we are ready to build OpenCV applications on Android. Next section deals with a list of Demos using OpenCV on Android.
+
 ---
 
 ## List of Demos
