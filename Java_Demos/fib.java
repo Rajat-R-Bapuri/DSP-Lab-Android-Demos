@@ -5,7 +5,7 @@ public class fib {
     // 1 1 2 3 5 8 13 21 34 55 89 144 ...
 
     // write a method to generate the Nth Fibonacci number
-    static long nFib(int N) // note the private keyword which says
+    private static long nFib(int N) // note the private keyword which says
                             // only the members of the class 'fib'
                             // can access this function
     {

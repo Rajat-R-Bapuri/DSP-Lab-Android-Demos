@@ -112,9 +112,9 @@ Log statements are used while debugging Android Applications. We will deal with 
 
 This demo will help you knowing creating user defined classes in one file and use them in another file.
 Informally, you have to create two separate Java files for this demo.
-You can find these files in the folder [fib_in_class](./fib_in_class). To keep the demo simple and within the scope of this tutorial, we will create both files in the same directory which avoids us from worrying about creating user defined packages, interfaces etc... If you are interested you may look into Java documentation by Oracle.
+You can find these files in the folder [fib_in_class](https://github.com/Rajat-R-Bapuri/DSP-Lab-Android-Demos/tree/master/Java_Demos/fib_in_class). To keep the demo simple and within the scope of this tutorial, we will create both files in the same directory which avoids us from worrying about creating user defined packages, interfaces etc... If you are interested you may look into Java documentation by Oracle.
 
-First create a **fibClass.java** file. You may use the following code or use the files from [here](./fib_in_class)
+First create a **fibClass.java** file. You may use the following code or use the files from [here](https://github.com/Rajat-R-Bapuri/DSP-Lab-Android-Demos/tree/master/Java_Demos/fib_in_class)
 
 ```java
 public class fibClass {
