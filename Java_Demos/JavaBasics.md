@@ -112,7 +112,7 @@ Log statements are used while debugging Android Applications. We will deal with 
 
 This demo will help you knowing creating user defined classes in one file and use them in another file.
 Informally, you have to create two separate Java files for this demo.
-You can find these files in the folder [fib_in_class](https://github.com/Rajat-R-Bapuri/DSP-Lab-Android-Demos/tree/master/Java_Demos/fib_in_class). To keep the demo simple and within the scope of this tutorial, we will create both files in the same directory which avoids us from worrying about creating user defined packages, interfaces etc... If you are interested you may look into Java documentation by Oracle.
+You can find these files in the folder [fib_in_class](https://github.com/Rajat-R-Bapuri/DSP-Lab-Android-Demos/tree/master/Java_Demos/fib_in_class). To keep the demo simple and within the scope of this tutorial, we will create both files in the same directory which avoids us from worrying about creating user defined packages, interfaces etc... If you are interested you may look into Java documentation or other websites for more complex examples.
 
 First create a **fibClass.java** file. You may use the following code or use the files from [here](https://github.com/Rajat-R-Bapuri/DSP-Lab-Android-Demos/tree/master/Java_Demos/fib_in_class)
 
@@ -167,26 +167,267 @@ public class mainClass {
         try {
             N = Integer.valueOf(input); // type casting string to int
             System.out.printf("\nThe Fibonacci number at N=%d is %d%n", N, fibClass.nFib(N)); // access the method like this
-            // you may try to experiment by making the nFib method private 
+            // you may try to experiment by making the nFib method private
         } catch (Exception e) { // handle the errors here
             // may be ask for user input again here
             e.printStackTrace(); // print the error that occured
         } finally { // this section is always executed whether exception occurs or not
             scanner.close();
         }
-
     }
 }
 ```
 
 ## Using constructors to create class objects in Java
 
-In the last demo it was only a method in a class. This demo will help you to get to know about creating objects of a class.
+In the previous demo it was only a method in a class. This demo will help you to get to know about creating objects of a class.
 Detailed information about classes and objects [here](https://docs.oracle.com/javase/tutorial/java/javaOO/index.html)
 
 For this demo we will implement student records using classes.
+Files for this demo are available [here]().
+Create a file called as **Student.java**, use the following code for the class or you may try to write your own.
 
-// TODO
+```java
+public class Student{
+
+    // class attributes
+    // it is good practice to keep the class attributes as private
+    // and use constructors, getter and setter methods to initialize and update values
+
+    private int student_id;
+    private String student_name;
+
+    //  there can be multiple constructors in a class
+    // if no constructor is written, the compiler automatically provides a no argument default constructor
+    // which initializes the attributes to default values
+    // but it is good practice to have your own constructor
+
+    // constructor is called when the Student class object is created
+    public Student(){
+        this.student_id = 0;
+        this.student_name = null;
+    }
+
+    // constructor with arguments
+    public Student(int id, String name){
+        this.student_id = id;
+        this.student_name = name;
+    }
+
+    // constructor with single argument
+    public Student(int id){
+        this.student_id = id;
+    }
+
+    // setter methods
+    public void set_student_id(int id){
+        this.student_id = id;
+    }
+
+    public void set_student_name(String name){
+        this.student_name = name;
+    }
+
+    // getter methods
+    public int get_student_id(){
+        return this.student_id;
+    }
+
+    public String get_student_name(){
+        return this.student_name;
+    }
+}
+```
+
+Create a file named as mainClass.java and use the following code.
+Comments have been provided in the code, which makes it self-explanatory.
+
+```java
+public class mainClass{
+    public static void main(String[] args){
+        Student s1 = new Student(); // use new keyword to create an object of class Student
+        // using different types of construtors available in the 
+        // student class to create objects
+        Student s2 = new Student(10, "Some Name");
+        Student s3 = new Student(11);
+
+        // manipulate the default values using the setter methods of the class
+        s1.set_student_id(12);
+        s1.set_student_name("Some Name 2");
+
+        // access the attributes using the getter methods
+        System.out.println("Student 1 details --> Id: " + s1.get_student_id() + 
+        "\t Name: " + s1.get_student_name());
+
+        // play around with this code by writing more lines and adding more methods
+    }
+}
+```
+
+## Inheritance in Java
+
+### Inheritance Demo 1
+
+Inheritance is one of the most important mechanisms in Java just like in any other OOP language.
+In this demo we will use the Student records example to demonstrate inheritance.
+Files for this demo are available [here.]()
+
+Use `extends` keyword in the `mainClass` to inherit all the attributes and methods from Student class. 
+In short, `Sudent` class is `Superclass` and `mainClass` is the `Subclass`.
+
+Files for this demo are available [here]().
+Create a file called as **Student.java**, use the following code for the class or you may try to write your own.
+
+```java
+public class Student{
+
+    private int student_id;
+    private String student_name;
+
+    // constructor without arguments
+    public Student(){
+        this.student_id = 10;
+        this.student_name = "Newton";
+    }
+
+    // setter methods
+    public void set_student_id(int id){
+        this.student_id = id;
+    }
+
+    public void set_student_name(String name){
+        this.student_name = name;
+    }
+
+    // getter methods
+    public int get_student_id(){
+        return this.student_id;
+    }
+
+    public String get_student_name(){
+        return this.student_name;
+    }
+
+    public void printSudentDetails(){
+        System.out.println("Student details --> Id: " + this.get_student_id() + 
+        "\t Name: " + this.get_student_name());
+    }
+}
+```
+
+Create a file named as mainClass.java and use the following code.
+Comments have been provided in the code, which makes it self-explanatory.
+
+```java
+public class mainClass extends Student{ // use extends keyword to inherit from a class
+    public static void main(String[] args){
+
+        // create a object of mainClass 
+        mainClass sc = new mainClass();
+
+        // all the methods are inherited to the subclass which can be called using the subclass object
+        sc.printSudentDetails();
+
+        // call the superclass methods using subclass object
+        sc.set_student_name("Issac");
+
+        sc.printSudentDetails();
+
+        int id = sc.get_student_id();
+
+        // play around with this code by writing more lines and adding more methods
+    }
+}
+```
+
+Detailed explanation about Inheritance is available [here.](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html)
+Many other examples are available in the official documentation of Java as well as on other websites
+
+### Inheritance demo 2
+
+This demo is taken from the [official Java documentation of inheritance.](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html)
+Files for this demo are available [here]().
+Here we create a single file named `MountainBike.java` to demonstrate another method to write the code.
+
+```java
+public class MountainBike extends Bicycle {
+
+    // the MountainBike subclass adds one field
+    public int seatHeight;
+
+    // the MountainBike subclass has one constructor
+    public MountainBike(int startHeight,
+                        int startCadence,
+                        int startSpeed,
+                        int startGear) {
+        super(startCadence, startSpeed, startGear);
+        seatHeight = startHeight;
+    }
+
+    // the MountainBike subclass adds one method
+    public void setHeight(int newValue) {
+        seatHeight = newValue;
+    }
+
+    // Method to print bike attributes
+    public void PrintBikeAttributes(){
+        System.out.println("Height: " + this.seatHeight);
+        System.out.println("Cadence: " + this.cadence);
+        System.out.println("Speed: " + this.speed);
+        System.out.println("Gear: " + this.gear);
+    }
+
+    public static void main(String args[]) {
+        MountainBike mBike = new MountainBike(2, 10, 2, 1);
+        System.out.println("Initial bike attributes");
+        mBike.PrintBikeAttributes();
+        mBike.setCadence(30);
+        mBike.setGear(2);
+        mBike.speedUp(10);
+        System.out.println("Bike attributes after gearing up");
+        mBike.PrintBikeAttributes();
+
+    }
+}
+
+class Bicycle {
+
+    // the Bicycle class has three fields
+    public int cadence;
+    public int gear;
+    public int speed;
+
+    // the Bicycle class has one constructor
+    public Bicycle(int startCadence, int startSpeed, int startGear) {
+        gear = startGear;
+        cadence = startCadence;
+        speed = startSpeed;
+    }
+
+    // the Bicycle class has four methods
+    public void setCadence(int newValue) {
+        cadence = newValue;
+    }
+
+    public void setGear(int newValue) {
+        gear = newValue;
+    }
+
+    public void applyBrake(int decrement) {
+        speed -= decrement;
+    }
+
+    public void speedUp(int increment) {
+        speed += increment;
+    }
+}
+```
+
+### Inheritance Demo 3
+
+```java
+
+```
 
 ## Java in Android Development
 
