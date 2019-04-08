@@ -1,5 +1,33 @@
 # Java basics
 
+## Contents
+
+1. [Introduction](#introduction)
+
+2. [Hello world!](#hello-world!)
+
+3. [Print Nth Fibonacci number using Java](#print-nth-fibonacci-number-using-java)
+
+4. [Rewriting Nth Fibonacci number program using class in Java](#rewriting-above-nth-fibonacci-number-using-class-in-java)
+
+5. [Using constructors to create objects of a class in Java](#using-constructors-to-create-objects-of-a-class-in-java)
+
+6. [Inheritance and interfaces in Java](#inheritance-and-interfaces-in-java)
+
+   a. [Interfaces Demo](#interfaces-demo)
+
+   b. [Inheritance Demo 1](#inheritance-demo-1)
+
+   c. [Inheritance Demo 2](#inheritance-demo-2)
+
+   d. [Inheritance Demo 3](#inheritance-demo-3)
+
+7. [Summary of Java Tutorial](#summary-of-java-tutorial)
+
+8. [Android Development using Java](#android-development-using-java)
+
+## Introduction
+
 This section provides basics of Java so that you can understand how to write logic for the Android applications.
 
 \* If you do not have Java installed on your machine you can download it from this [link](https://www.java.com/en/download/help/download_options.xml) and install.
@@ -178,7 +206,7 @@ public class mainClass {
 }
 ```
 
-## Using constructors to create class objects in Java
+## Using constructors to create objects of a class in Java
 
 In the previous demo it was only a method in a class. This demo will help you to get to know about creating objects of a class.
 Detailed information about classes and objects [here](https://docs.oracle.com/javase/tutorial/java/javaOO/index.html)
@@ -264,13 +292,86 @@ public class mainClass{
 }
 ```
 
-## Inheritance in Java
+## Inheritance and interfaces in Java
+
+This section deals with demos which show how inheritance and interfaces work in Java. These are widely used concepts while dealing with Android app development using Java.
+
+### Interfaces Demo
+
+This demo is to show usage of interfaces.
+In the Java programming language, an interface is a reference type, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types.
+Read more [here.](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
+
+In this demo we will implement a simple complex number calculator.
+Create a file called `complex_number_interface.java` and use the following code in it or write your own.
+
+Files for this demo are available [here]().
+
+```java
+class complex implements ComplexCalculator{ // notice the use of implements keyword
+
+    // attributes of class complex
+    private int real, imaginary;
+
+    // constructor of the class complex
+    public complex(int r, int i){
+        real = r;
+        imaginary = i;
+    }
+
+    // implementing the interface ComplexCalculator 
+    public complex add(complex a){
+        complex c = new complex(0, 0);
+        c.real = this.real + a.real;
+        c.imaginary = this.imaginary + a.imaginary;
+        return c;
+    }
+
+    public complex subtract(complex a){
+        complex c = new complex(0, 0);
+        c.real = this.real - a.real;
+        c.imaginary = this.imaginary - a.imaginary;
+        return c;
+    }
+
+    public String complex_number_string(){
+        return this.real + " + " + this.imaginary + "i";
+    }
+}
+
+interface ComplexCalculator{
+
+    // method signatures to perform operations on complex numbers
+    complex add(complex a);
+
+    complex subtract(complex a);
+
+    // interfaces can contain constants
+    float pi = 3.14f;
+}
+
+public class complex_number_interface {
+
+    public static void main(String[] args) {
+        // create two complex numbers
+        complex x = new complex(1, 2);
+        complex y = new complex(3, 4);
+
+        // perform operations on complex numbers
+        complex z = x.add(y);
+
+        System.out.println("Addition of "+ x.complex_number_string() + " and " + 
+        y.complex_number_string() + " is " + z.complex_number_string());
+
+        // similarly subtraction can be performed
+    }
+}
+```
 
 ### Inheritance Demo 1
 
 Inheritance is one of the most important mechanisms in Java just like in any other OOP language.
 In this demo we will use the Student records example to demonstrate inheritance.
-Files for this demo are available [here.]()
 
 Use `extends` keyword in the `mainClass` to inherit all the attributes and methods from Student class. 
 In short, `Sudent` class is `Superclass` and `mainClass` is the `Subclass`.
@@ -315,8 +416,9 @@ public class Student{
 }
 ```
 
-Create a file named as mainClass.java and use the following code.
+Create a file named as **mainClass.java** and use the following code.
 Comments have been provided in the code, which makes it self-explanatory.
+You need to have both these Java files in the same directory.
 
 ```java
 public class mainClass extends Student{ // use extends keyword to inherit from a class
@@ -346,8 +448,11 @@ Many other examples are available in the official documentation of Java as well 
 ### Inheritance demo 2
 
 This demo is taken from the [official Java documentation of inheritance.](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html)
-Files for this demo are available [here]().
 Here we create a single file named `MountainBike.java` to demonstrate another method to write the code.
+
+Read more about Abstract methods and classes [here.](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+
+Files for this demo are available [here]().
 
 ```java
 public class MountainBike extends Bicycle {
@@ -425,11 +530,112 @@ class Bicycle {
 
 ### Inheritance Demo 3
 
-```java
+This demo is intended to show how Abstract classes are used and these are widely used in Android app development using Java.
 
+Abstract classes are the classes which may or may not have methods which are `abstract`.
+Abstract methods are the methods which are declared but the definitions are not implemented. These methods are supposed to be implemented in the subclass which extend the superclass.
+Abstract classes are declared using `abstract` keyword and subclass uses `extends` keyword to inherit from superclass.
+
+In this demo we will reimplement the complex number calculator.
+
+Files for this demo are available [here]().
+
+```java
+class complex extends ComplexNumberOperations{ // notice the use of implements keyword
+
+    // attributes of class complex
+    private int real, imaginary;
+
+    // constructor of the class complex
+    public complex(int r, int i){
+        real = r;
+        imaginary = i;
+    }
+
+    // getter methods
+    public int get_real(){
+        return this.real;
+    }
+
+    public int get_imaginary(){
+        return this.imaginary;
+    }
+
+    // setter methods
+    public void set_real(int r){
+        this.real = r;
+    }
+
+    public void set_imaginary(int i){
+        this.imaginary = i;
+    }
+
+    // methods to return complex number in form of string
+    public String complex_number_string(){
+        return this.real + " + " + this.imaginary + "i";
+    }
+
+    // implement the subtract method which was abstract in ComplexNumberOperations
+    public complex subtract(complex a, complex b){
+        complex c = new complex(0, 0);
+        c.set_real(a.get_real() - b.get_real());
+        c.set_imaginary(a.get_imaginary() - b.get_imaginary());
+        return c;
+    }
+}
+
+abstract class ComplexNumberOperations implements ComplexCalculator{
+        // implementing the interface ComplexCalculator 
+        public complex add(complex a, complex b){
+            complex c = new complex(0, 0);
+            c.set_real(a.get_real() + b.get_real());
+            c.set_imaginary(a.get_imaginary() + b.get_imaginary());
+            return c;
+        }
+
+        abstract public complex subtract(complex a, complex b);
+}
+
+interface ComplexCalculator{
+
+    // method signatures to perform operations on complex numbers
+    complex add(complex a, complex b);
+
+    complex subtract(complex a, complex b);
+
+    // interfaces can contain constants
+    float pi = 3.14f;
+}
+
+public class complex_number_calculator {
+
+    public static void main(String[] args) {
+        // create two complex numbers
+        complex x = new complex(1, 2);
+        complex y = new complex(3, 4);
+
+        // perform operations on complex numbers
+        complex z = new complex(0, 0);
+        z = z.subtract(x, y);
+
+        System.out.println("Subtraction of "+ x.complex_number_string() + " and " + 
+        y.complex_number_string() + " is " + z.complex_number_string());
+
+        // similarly addition can be performed
+    }
+}
 ```
 
-## Java in Android Development
+## Summary of Java Tutorial
+
+|Keyword|Functionality|
+|-------|-------------|
+|`import` |To import packages|
+|`abstract`|    Declare a class as abstract|
+|`implements`|  Implement methods of an interface|
+|`extends`|     Inherit all the members from a superclass|
+
+## Android Development using Java
 
 From this section onwards the we will use Java in context of Android apps.
 
