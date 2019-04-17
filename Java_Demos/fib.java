@@ -44,7 +44,7 @@ public class fib {
             System.out.printf("\nThe Fibonacci number at N=%d is %d%n", N, nFib(N));
         } catch (Exception e) { // handle the errors here
             // may be ask for user input again here
-            e.printStackTrace(); // print the error that occured
+            e.printStackTrace(); // print the error that occurred
         } finally { // this section is always executed whether exception occurs or not
             scanner.close();
         }
