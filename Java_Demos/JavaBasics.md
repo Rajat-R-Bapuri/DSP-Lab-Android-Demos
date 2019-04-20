@@ -1,8 +1,12 @@
 ---
 layout: default
 title: Java Basics
+<<<<<<< HEAD
 description: This section helps you with Java basics, which will later be used in Android app development.
 sub-description: DSP lab
+=======
+description: This section helps you with learning Java basics required for Android app development
+>>>>>>> origin/master
 ---
 
 # Java basics
@@ -11,7 +15,7 @@ sub-description: DSP lab
 
 1. [Introduction](#introduction)
 
-2. [Hello world!](#hello-world!)
+2. [Hello world!](#hello-world)
 
 3. [Print Nth Fibonacci number using Java](#print-nth-fibonacci-number-using-java)
 
@@ -45,7 +49,7 @@ Have a look at primitive data types in Java [here.](https://docs.oracle.com/java
 
 [Official Java tutorial by Oracle.](https://docs.oracle.com/javase/tutorial/java/index.html)
 
-## Hello world!
+## Hello world
 
 ```java
 public class Hello // create a class called as Hello
