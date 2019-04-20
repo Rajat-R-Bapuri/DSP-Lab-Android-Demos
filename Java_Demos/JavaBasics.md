@@ -1,3 +1,10 @@
+---
+layout: default
+title: Java Basics
+description: This section helps you with Java basics, which will later be used in Android app development.
+sub-description: DSP lab
+---
+
 # Java basics
 
 ## Contents
@@ -272,7 +279,7 @@ Comments have been provided in the code, which makes it self-explanatory.
 public class mainClass{
     public static void main(String[] args){
         Student s1 = new Student(); // use new keyword to create an object of class Student
-        // using different types of construtors available in the 
+        // using different types of construtors available in the
         // student class to create objects
         Student s2 = new Student(10, "Some Name");
         Student s3 = new Student(11);
@@ -282,7 +289,7 @@ public class mainClass{
         s1.set_student_name("Some Name 2");
 
         // access the attributes using the getter methods
-        System.out.println("Student 1 details --> Id: " + s1.get_student_id() + 
+        System.out.println("Student 1 details --> Id: " + s1.get_student_id() +
         "\t Name: " + s1.get_student_name());
 
         // play around with this code by writing more lines and adding more methods
@@ -317,7 +324,7 @@ class complex implements ComplexCalculator{ // notice the use of implements keyw
         imaginary = i;
     }
 
-    // implementing the interface ComplexCalculator 
+    // implementing the interface ComplexCalculator
     public complex add(complex a){
         complex c = new complex(0, 0);
         c.real = this.real + a.real;
@@ -358,7 +365,7 @@ public class complex_number_interface {
         // perform operations on complex numbers
         complex z = x.add(y);
 
-        System.out.println("Addition of "+ x.complex_number_string() + " and " + 
+        System.out.println("Addition of "+ x.complex_number_string() + " and " +
         y.complex_number_string() + " is " + z.complex_number_string());
 
         // similarly subtraction can be performed
@@ -371,7 +378,7 @@ public class complex_number_interface {
 Inheritance is one of the most important mechanisms in Java just like in any other OOP language.
 In this demo we will use the Student records example to demonstrate inheritance.
 
-Use `extends` keyword in the `mainClass` to inherit all the attributes and methods from Student class. 
+Use `extends` keyword in the `mainClass` to inherit all the attributes and methods from Student class.
 In short, `Sudent` class is `Superclass` and `mainClass` is the `Subclass`.
 
 Files for this demo are available [here]().
@@ -408,7 +415,7 @@ public class Student{
     }
 
     public void printSudentDetails(){
-        System.out.println("Student details --> Id: " + this.get_student_id() + 
+        System.out.println("Student details --> Id: " + this.get_student_id() +
         "\t Name: " + this.get_student_name());
     }
 }
@@ -422,7 +429,7 @@ You need to have both these Java files in the same directory.
 public class mainClass extends Student{ // use extends keyword to inherit from a class
     public static void main(String[] args){
 
-        // create a object of mainClass 
+        // create a object of mainClass
         mainClass sc = new mainClass();
 
         // all the methods are inherited to the subclass which can be called using the subclass object
@@ -583,7 +590,7 @@ class complex extends ComplexNumberOperations{ // notice the use of implements k
 }
 
 abstract class ComplexNumberOperations implements ComplexCalculator{
-        // implementing the interface ComplexCalculator 
+        // implementing the interface ComplexCalculator
         public complex add(complex a, complex b){
             complex c = new complex(0, 0);
             c.set_real(a.get_real() + b.get_real());
@@ -616,7 +623,7 @@ public class complex_number_calculator {
         complex z = new complex(0, 0);
         z = z.subtract(x, y);
 
-        System.out.println("Subtraction of "+ x.complex_number_string() + " and " + 
+        System.out.println("Subtraction of "+ x.complex_number_string() + " and " +
         y.complex_number_string() + " is " + z.complex_number_string());
 
         // similarly addition can be performed
