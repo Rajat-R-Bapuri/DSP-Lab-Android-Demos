@@ -1,12 +1,7 @@
 ---
 layout: default
 title: Java Basics
-<<<<<<< HEAD
 description: This section helps you with Java basics, which will later be used in Android app development.
-sub-description: DSP lab
-=======
-description: This section helps you with learning Java basics required for Android app development
->>>>>>> origin/master
 ---
 
 # Java basics
