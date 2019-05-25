@@ -14,7 +14,7 @@ description: This section helps you with Java basics, which will later be used i
 
 3. [Print Nth Fibonacci number using Java](#print-nth-fibonacci-number-using-java)
 
-4. [Rewriting Nth Fibonacci number program using class in Java](#rewriting-above-nth-fibonacci-number-using-class-in-java)
+4. [Rewriting Nth Fibonacci number program using class in Java](#rewriting-above-nth-fibonacci-number-program-using-class-in-java)
 
 5. [Using constructors to create objects of a class in Java](#using-constructors-to-create-objects-of-a-class-in-java)
 
@@ -216,7 +216,7 @@ In the previous demo it was only a method in a class. This demo will help you to
 Detailed information about classes and objects [here](https://docs.oracle.com/javase/tutorial/java/javaOO/index.html)
 
 For this demo we will implement student records using classes.
-Files for this demo are available [here]().
+Files for this demo are available [here](./student_records/).
 Create a file called as **Student.java**, use the following code for the class or you may try to write your own.
 
 ```java
@@ -271,7 +271,7 @@ public class Student{
 }
 ```
 
-Create a file named as mainClass.java and use the following code.
+Create a file named as **mainClass.java** and use the following code.
 Comments have been provided in the code, which makes it self-explanatory.
 
 ```java
@@ -309,7 +309,7 @@ Read more [here.](https://docs.oracle.com/javase/tutorial/java/IandI/createinter
 In this demo we will implement a simple complex number calculator.
 Create a file called `complex_number_interface.java` and use the following code in it or write your own.
 
-Files for this demo are available [here]().
+Files for this demo are available [here](./complex_number_calculator.java).
 
 ```java
 class complex implements ComplexCalculator{ // notice the use of implements keyword
