@@ -140,7 +140,7 @@ But in case of Android App, it is not preferred to use `System.out.print` statem
 Instead we use Log to generate logs in Android App.
 Log statements are used while debugging Android Applications. We will deal with Logs in android later.)
 
-## Rewriting above Nth Fibonacci number using class in Java
+## Rewriting above Nth Fibonacci number program using class in Java
 
 This demo will help you knowing creating user defined classes in one file and use them in another file.
 Informally, you have to create two separate Java files for this demo.
@@ -545,7 +545,7 @@ In this demo we will reimplement the complex number calculator.
 Files for this demo are available [here]().
 
 ```java
-class complex extends ComplexNumberOperations{ // notice the use of implements keyword
+class complex extends ComplexNumberOperations{
 
     // attributes of class complex
     private int real, imaginary;
