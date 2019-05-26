@@ -44,6 +44,8 @@ Have a look at primitive data types in Java [here.](https://docs.oracle.com/java
 
 [Official Java tutorial by Oracle.](https://docs.oracle.com/javase/tutorial/java/index.html)
 
+[LINK TO ALL THE FILES NEEDED FOR THIS TUTORIAL.](../Java_Demos)
+
 ## Hello world
 
 ```java
@@ -216,7 +218,6 @@ In the previous demo it was only a method in a class. This demo will help you to
 Detailed information about classes and objects [here](https://docs.oracle.com/javase/tutorial/java/javaOO/index.html)
 
 For this demo we will implement student records using classes.
-Files for this demo are available [here](./student_records/).
 Create a file called as **Student.java**, use the following code for the class or you may try to write your own.
 
 ```java
@@ -309,8 +310,6 @@ Read more [here.](https://docs.oracle.com/javase/tutorial/java/IandI/createinter
 In this demo we will implement a simple complex number calculator.
 Create a file called `complex_number_interface.java` and use the following code in it or write your own.
 
-Files for this demo are available [here](./complex_number_calculator.java).
-
 ```java
 class complex implements ComplexCalculator{ // notice the use of implements keyword
 
@@ -380,7 +379,6 @@ In this demo we will use the Student records example to demonstrate inheritance.
 Use `extends` keyword in the `mainClass` to inherit all the attributes and methods from Student class.
 In short, `Sudent` class is `Superclass` and `mainClass` is the `Subclass`.
 
-Files for this demo are available [here]().
 Create a file called as **Student.java**, use the following code for the class or you may try to write your own.
 
 ```java
@@ -455,8 +453,6 @@ This demo is taken from the [official Java documentation of inheritance.](https:
 Here we create a single file named `MountainBike.java` to demonstrate another method to write the code.
 
 Read more about Abstract methods and classes [here.](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
-
-Files for this demo are available [here]().
 
 ```java
 public class MountainBike extends Bicycle {
@@ -541,8 +537,6 @@ Abstract methods are the methods which are declared but the definitions are not 
 Abstract classes are declared using `abstract` keyword and subclass uses `extends` keyword to inherit from superclass.
 
 In this demo we will reimplement the complex number calculator.
-
-Files for this demo are available [here]().
 
 ```java
 class complex extends ComplexNumberOperations{
