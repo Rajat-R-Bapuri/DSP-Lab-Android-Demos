@@ -44,7 +44,7 @@ Have a look at primitive data types in Java [here.](https://docs.oracle.com/java
 
 [Official Java tutorial by Oracle.](https://docs.oracle.com/javase/tutorial/java/index.html)
 
-[LINK TO ALL THE FILES NEEDED FOR THIS TUTORIAL.](../Java_Demos)
+[LINK TO ALL THE FILES NEEDED FOR THIS TUTORIAL.](https://github.com/Rajat-R-Bapuri/DSP-Lab-Android-Demos/tree/master/Java_Demos)
 
 ## Hello world
 
