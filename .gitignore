@@ -1,3 +1,5 @@
 .*
 !/.gitignore
 _site/
+Gemfile
+Gemfile.lock
