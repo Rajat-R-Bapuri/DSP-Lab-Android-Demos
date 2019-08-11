@@ -1,4 +1,4 @@
-# Accelero-Sine Wave
+# Accelero-Sine Wave (Java)
 
 This is a fun demo app, just to explore the sensors in the phone. This demo uses Accelerometer, but you can try to play around with other sensors. In this app, the frequency of the sine wave changes as x-axis accelerometer values changes.
 

@@ -1,4 +1,4 @@
-# Fibonacci series app
+# Fibonacci series app (Java)
 
 This demo displays fibonacci series in the the app screen as well as Logcat.
 Here we do not take the user input, we directly generate the Nth Fibonacci Number for N which will be predefined in the code.
