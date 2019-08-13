@@ -1,0 +1,185 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:2:1-27:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/39ac3e0e8a40fbc1eafe445cc1a02380/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/9e699ebb6f96b7b74cc740d28c4a6b38/AndroidManifest.xml:2:1-11:12
+MERGED from [:openCVLibrary343] /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/openCVLibrary343/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/d502f74de03babfca207fc44c5b21cd0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/04d994e580f14e3abeb3dc52dcf5779a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/5d850f2390bb3062d74675b66f8781b6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/7a68fe81dde0d70d4b6a07a5e1a6ac9d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/822048fbb6a7af07942cc654483f954c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/b87511120ea9473851e25239262c6b45/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/2366a8f899146e1cfc23fdb792191d24/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/b799458b76d8de8cc352b6e262d8f128/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/6b317e7d8385bbed544881e29b505a81/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/67966cf8df00d349ea77fab791ef4a40/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/9df35bde5ac8235afed5f9bbed5c9064/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/e61ae893f881c2bba42f700ff010c3a9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/3b65946833a5b421d7ea4b3d8e8cef6a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/c6f22470bdb5f65a4da39d57c3a6aaa8/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/0b1b3922fb5a79fb2f4e17c15adb3545/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/ac09fcafa5124fac27acb67035e754ee/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/52b25296ff633618d02c9fdeed78e19e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/8631023b402a55ca14615d3b190d2380/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/560713f8998ac862f9a590d40a074090/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/6ccba451c844681ad0fd0a96b6d74c8c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/dd8a1e22559d703fe92e3d9d688e0425/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/5e102460f6831e1e72e59eb7aff51267/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/b0e370649256be8613a37331c0429f51/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/49bfdf66723af80245d549712079635b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/398dced43bca1a1af53d0c62c90a9195/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:3:5-40
+		INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:2:1-27:12
+		INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:2:1-27:12
+		INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CAMERA
+ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:4:5-64
+	android:name
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:4:22-62
+uses-feature#android.hardware.camera
+ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:6:5-84
+	android:required
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:6:58-82
+	android:name
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:6:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:7:5-94
+	android:required
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:7:68-92
+	android:name
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:7:19-67
+uses-feature#android.hardware.camera.front
+ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:8:5-90
+	android:required
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:8:64-88
+	android:name
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:8:19-63
+uses-feature#android.hardware.camera.front.autofocus
+ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:9:5-100
+	android:required
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:9:74-98
+	android:name
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:9:19-73
+application
+ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:11:5-25:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/9e699ebb6f96b7b74cc740d28c4a6b38/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/9e699ebb6f96b7b74cc740d28c4a6b38/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/c6f22470bdb5f65a4da39d57c3a6aaa8/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/c6f22470bdb5f65a4da39d57c3a6aaa8/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/0b1b3922fb5a79fb2f4e17c15adb3545/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/0b1b3922fb5a79fb2f4e17c15adb3545/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/c6f22470bdb5f65a4da39d57c3a6aaa8/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:14:9-41
+	android:roundIcon
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:15:9-54
+	android:icon
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:17:9-40
+activity#com.example.myapplication.MainActivity
+ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:18:9-24:20
+	android:name
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:18:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml:22:27-74
+uses-sdk
+INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/39ac3e0e8a40fbc1eafe445cc1a02380/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/39ac3e0e8a40fbc1eafe445cc1a02380/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/9e699ebb6f96b7b74cc740d28c4a6b38/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/9e699ebb6f96b7b74cc740d28c4a6b38/AndroidManifest.xml:5:5-7:41
+MERGED from [:openCVLibrary343] /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/openCVLibrary343/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:openCVLibrary343] /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/openCVLibrary343/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/d502f74de03babfca207fc44c5b21cd0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/d502f74de03babfca207fc44c5b21cd0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/04d994e580f14e3abeb3dc52dcf5779a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/04d994e580f14e3abeb3dc52dcf5779a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/5d850f2390bb3062d74675b66f8781b6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/5d850f2390bb3062d74675b66f8781b6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/7a68fe81dde0d70d4b6a07a5e1a6ac9d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/7a68fe81dde0d70d4b6a07a5e1a6ac9d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/822048fbb6a7af07942cc654483f954c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/822048fbb6a7af07942cc654483f954c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/b87511120ea9473851e25239262c6b45/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/b87511120ea9473851e25239262c6b45/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/2366a8f899146e1cfc23fdb792191d24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/2366a8f899146e1cfc23fdb792191d24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/b799458b76d8de8cc352b6e262d8f128/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/b799458b76d8de8cc352b6e262d8f128/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/6b317e7d8385bbed544881e29b505a81/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/6b317e7d8385bbed544881e29b505a81/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/67966cf8df00d349ea77fab791ef4a40/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/67966cf8df00d349ea77fab791ef4a40/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/9df35bde5ac8235afed5f9bbed5c9064/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/9df35bde5ac8235afed5f9bbed5c9064/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/e61ae893f881c2bba42f700ff010c3a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/e61ae893f881c2bba42f700ff010c3a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/3b65946833a5b421d7ea4b3d8e8cef6a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/3b65946833a5b421d7ea4b3d8e8cef6a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/c6f22470bdb5f65a4da39d57c3a6aaa8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/c6f22470bdb5f65a4da39d57c3a6aaa8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/0b1b3922fb5a79fb2f4e17c15adb3545/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/0b1b3922fb5a79fb2f4e17c15adb3545/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/ac09fcafa5124fac27acb67035e754ee/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/ac09fcafa5124fac27acb67035e754ee/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/52b25296ff633618d02c9fdeed78e19e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/52b25296ff633618d02c9fdeed78e19e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/8631023b402a55ca14615d3b190d2380/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/8631023b402a55ca14615d3b190d2380/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/560713f8998ac862f9a590d40a074090/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/560713f8998ac862f9a590d40a074090/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/6ccba451c844681ad0fd0a96b6d74c8c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/6ccba451c844681ad0fd0a96b6d74c8c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/dd8a1e22559d703fe92e3d9d688e0425/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/dd8a1e22559d703fe92e3d9d688e0425/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/5e102460f6831e1e72e59eb7aff51267/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/5e102460f6831e1e72e59eb7aff51267/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/b0e370649256be8613a37331c0429f51/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/b0e370649256be8613a37331c0429f51/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/49bfdf66723af80245d549712079635b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/49bfdf66723af80245d549712079635b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/398dced43bca1a1af53d0c62c90a9195/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/rrbapuri/.gradle/caches/transforms-2/files-2.1/398dced43bca1a1af53d0c62c90a9195/AndroidManifest.xml:20:5-44
+INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+		ADDED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/rrbapuri/Desktop/Spring_19/GA/Android/MyApplication/app/src/main/AndroidManifest.xml
