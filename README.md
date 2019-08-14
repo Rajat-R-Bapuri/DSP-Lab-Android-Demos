@@ -2,6 +2,8 @@
 
 This is the repository for Android demos for the [EL-GY 6183 Digital Signal Processing Laboratory](http://bulletin.engineering.nyu.edu/preview_course_nopop.php?catoid=9&coid=24134) taught by [Professor Ivan Selesnick](http://eeweb.poly.edu/iselesni/) at NYU Tandon School of Engineering.
 
+This tutorial intends to demonstrate that Android phones can be used as a tool to develop cool Digital signal processing applications.
+
 ## Contents
 
 1. [Java Basics](./Java_Demos/JavaBasics.md)
@@ -17,7 +19,7 @@ This is the repository for Android demos for the [EL-GY 6183 Digital Signal Proc
 
 You have following options:
 
-1. You may start to learn `Kotlin` from the tutorial available in this [repo](./Kotlin/README.md) or from the [official documentation](https://kotlinlang.org/docs/reference/). After you have some experience with the `Kotlin` syntax, you can start with demo apps using `Kotlin` available [here]().
+1. You may start to learn `Kotlin` from the tutorial available in this [repo](./Kotlin/README.md) or from the [official documentation](https://kotlinlang.org/docs/reference/). After you have some experience with the `Kotlin` syntax, you can start with demo apps using `Kotlin` available [here](./Android_Demos/README.md).
 
 2. If you do not have any programming experience with `Java` or if you want to refresh `Java` basics, then start [here](./Java_Demos/JavaBasics.md).
 Otherwise, continue with Android Programming using `Java` from [here](./Android_Demos/README.md).
