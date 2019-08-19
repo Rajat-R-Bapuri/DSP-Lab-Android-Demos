@@ -24,7 +24,7 @@ Step 5. You must get a dialog box asking for module path.
 ![import_module_dialogue](../images/import_module_dialogue.png)
 
 Step 6. Import OpenCV by navigating to the unzipped library (form step 1).
-    Navigate to `./path/OpenCV-android-sdk/sdk/java`
+Navigate to `./path/OpenCV-android-sdk/sdk/java`
 
 ![import_module_from_path](../images/import_module_from_path.png)
 
@@ -40,7 +40,7 @@ Step 9. Android Studio will take a while to complete the import process. Chances
 
 ![import_errors](../images/import_errors.png)
 
-    Following steps will guide you through to fix the import errors.
+Following steps will guide you through to fix the import errors.
 
 Step 10. In the project navigation panel, firstly open the OpenCV gradle file which is shown below.
 
@@ -52,26 +52,26 @@ Step 11. The gradle file before fixing the erros might look something as shown b
 
 Step 12. Change the **targetSdkVersion** to match with the **compileSdkVersion**. An example is as follows:
 
-    ```gradle
-    apply plugin: 'com.android.library'
+```gradle
+apply plugin: 'com.android.library'
 
-    android {
-        compileSdkVersion 28
-        buildToolsVersion "28.0.3"
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 
-        defaultConfig {
-            minSdkVersion 8
-            targetSdkVersion 28
-        }
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 28
+    }
 
-        buildTypes {
-            release {
-                minifyEnabled false
-                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-            }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
-    ```
+}
+```
 
 Step 13. After making the changes to the gradle file, navigate to the manifest file of OpenCV which in the location as shown below:
 
@@ -79,42 +79,42 @@ Step 13. After making the changes to the gradle file, navigate to the manifest f
 
 Step 14. Make changes to OpenCV manifest file by **removing** the `<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="21" />` line. The final manifest file should look something as follows:
 
-    ```XML
-    <?xml version="1.0" encoding="utf-8"?>
-    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="org.opencv"
-        android:versionCode="3430"
-        android:versionName="3.4.3">
-    </manifest>
-    ```
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.opencv"
+    android:versionCode="3430"
+    android:versionName="3.4.3">
+</manifest>
+```
 
 Step 15. Save all the changes and click on the sync now button which appears at the top as shown below:
 
 ![gradle_sync1](../images/gradle_sync.png)
 
-    You can also sync by clicking on the small elephant icon which is circled in the image.
+You can also sync by clicking on the small elephant icon which is circled in the image.
 
 Step 16. Add OpenCV dependency to the project. To do this, go to File --> Project Structure as shown below.
 
-    (Shortcut for project structure in Mac is &#8984;+;)
+(Shortcut for project structure in Mac is &#8984;+;)
 
-    ![file_project_structure](../images/file_project_structure.png)
+![file_project_structure](../images/file_project_structure.png)
 
-    You should see a dialog box as follows:
+You should see a dialog box as follows:
 
-    Under modules section, click on app and click on dependencies. Then click on the + in the bottom and select module dependency (circled in red in above image).
+Under modules section, click on app and click on dependencies. Then click on the + in the bottom and select module dependency (circled in red in above image).
 
 ![project_structure_dialog](../images/project_structure_dialog.png)
 
 Step 17. After selecting the module dependency, the following dialog box should pop up. Select the OpenCV module which was imported in the previous steps.
 
-    ![choose_modules](../images/choose_modules.png)
+![choose_modules](../images/choose_modules.png)
 
-    After selecting the OpenCV module, the dependencies section in the project structure module should have the OpenCV listed as shown in image below.
+After selecting the OpenCV module, the dependencies section in the project structure module should have the OpenCV listed as shown in image below.
 
 ![project_structure_dialog2](../images/project_structure_dialog2.png)
 
-    Click ok and wait for the build to complete.
+Click ok and wait for the build to complete.
 
 Step 18. Now open the OpenCV SDK folder which you downloaded and unzipped. Go to /OpenCV-android-sdk/sdk/native and then copy the `libs` folder
 
@@ -122,13 +122,13 @@ Step 18. Now open the OpenCV SDK folder which you downloaded and unzipped. Go to
 
 Step 19. Paste the `libs` folder copied from OpenCV SDK into your android project. To do this, navigate to your project folder in the `main` folder by navigating as follows: /project_parent_directory/project_folder/app/src/main/
 
-    A example is shown below.
+A example is shown below.
 
 ![paste_opencv_libs](../images/paste_opencv_libs.png)
 
 Step 20. Phew, last step! Rename the `libs` folder you pasted in the previous step as `jniLibs`.
 
-    A example is shown below.
+A example is shown below.
 
 ![rename_opencv_libs](../images/rename_opencv_libs.png)
 
@@ -138,4 +138,14 @@ Now we are ready to build OpenCV applications on Android. Next section deals wit
 
 ## List of Demos
 
-Now let us get started with demos. Following are the list of demos which are available in this repository. Click on each of the demos to
+Most of these demos are form the official OpenCV4Android repository with some modifications.
+
+| Demo Name | Description ||
+|-----------|-------------|-|
+|Simple Camera|Opening camera using OpenCV|[Code](./openCV_camera/README.md)|
+|Video blur|Blur the camera input in real-time|[Code](./video_blur/README.md)|
+|Color Blob Detection|Detecting color blobs in real time|[Code](./color_blob_detector/README.md)|
+
+### If you encounter the following error while trying any of the above demos, then please go to Phone settings > App permissions > APP_NAME > Permissions and enable camera permission, so that app can access the camera.
+
+![camera_error](../images/opencv_premission_error.png)
