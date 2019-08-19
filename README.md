@@ -32,6 +32,4 @@ I have tried to write the same sample apps in both the languages.
 
 ## OpenCV
 
-[OpenCV setup](./OpenCV/README.md)
-
-// TODO opencv demos
+The OpenCV for Android tutorial is available [here.](./OpenCV/README.md) This tutorial includes setting up OpenCV for Android and few demos to get started with.

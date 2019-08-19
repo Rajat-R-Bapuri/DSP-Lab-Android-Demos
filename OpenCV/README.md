@@ -13,6 +13,8 @@ Step 1. [Download OpenCV 3.4.3 from official OpenCV SourceForge page.](https://s
 
 Step 2. Unzip the OpenCV library.
 
+> (The documentation for OpenCV is available in the following path: OpenCV-android-sdk/sdk/java/javadoc/index.html.)
+
 Step 3. Create a new project in Android Studio using this [guide](../README.MD).
 
 Step 4. Import the OpenCV module: File --> New --> Import Module
