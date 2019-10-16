@@ -8,8 +8,7 @@ This tutorial intends to demonstrate that Android phones can be used as a tool t
 
 1. [Java Basics](./Java_Demos/JavaBasics.md)
 2. [Kotlin Basics](./Kotlin/README.md)
-3. [Android](#android)
-4. [OpenCV for Android](#opencv)
+3. [OpenCV for Android](#opencv)
 
 ---
 
