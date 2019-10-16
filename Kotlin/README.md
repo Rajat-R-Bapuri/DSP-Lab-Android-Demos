@@ -40,7 +40,7 @@ Copy the following code and save it to a file with extension `.kt`
 
 Few points to note:
 
-- Semicolons at end of statements are discourages in Kotlin.
+- Semicolons at end of statements are discouraged in Kotlin.
 
 - Single line comments are written using `//`
 
