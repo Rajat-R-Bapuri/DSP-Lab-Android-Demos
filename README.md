@@ -37,15 +37,15 @@ Following are the list of demos available in this repository. Each demo has a re
 
 | Demo Name | Description |||
 |-------------|-------------|-------------|-------------|
-|`Text Edit Demo`|Simple app with text view and edit text|[Kotlin](./kotlin_implementations/Text_Edit_Demo/README.md)|[Java](./java_implementations/Text_Edit_Demo/README.md)|
-|`Fibonacci series app 1`|This app demonstrates how to display fixed length Fibonacci series generated on the app screen and using the Log statements in android |[Kotlin](./kotlin_implementations/Fib_TextView/README.md)|[Java](./java_implementations/Fib_TextView/README.md)|
-|`Fibonacci series app 2`|This app demonstrates how to take length of Fibonacci series as user input in app using UI and display the generated Fibonacci series |[Kotlin](./kotlin_implementations/Fib_EditText/README.md)|[Java](./java_implementations/Fib_EditText/README.md)|
-|`Text Image Demo`|Simple app with text view and image view|[Kotlin](./kotlin_implementations/Text_Image_demo/README.md)|[Java](./java_implementations/Text_Image_Demo/README.md)|
-|`Slider Demo`|App to demonstrate use of slider which is called SeekBar in Android|[Kotlin](./kotlin_implementations/Slider_Demo/README.md)|[Java](./java_implementations/Slider_Demo/README.md)|
-|`Sine Wave Demo 1`|App to demonstrate generating sine wave with fixed frequency|[Kotlin](./kotlin_implementations/Sine_Wave_Demo1/README.md)|[Java](./java_implementations/Sine_Wave_Demo1/README.md)|
-|`Sine Wave Demo 2`|App to demonstrate generating sine wave with variable frequency (uses buttons)||[Java](./java_implementations/Sine_Wave_Demo2/README.md)|
-|`Sine Wave Demo 3`|App to demonstrate generating sine wave with variable frequency (uses SeekBar)||[Java](./java_implementations/Sine_Wave_Demo3/README.md)|
-|`Sine Wave Demo 4`|App to demonstrate generating sine wave with variable frequency and gain (uses SeekBar)||[Java](./java_implementations/Sine_Wave_Demo4/README.md)|
-|`Accelero-Sine wave`|A fun app. The frequency of the sine wave changes as you move and rotate your phone (uses accelerometer)||[Java](./java_implementations/Accelerometer_Sine_Wave/README.md)|
+|`Text Edit Demo`|Simple app with text view and edit text|[Kotlin](./Android_Demos/kotlin_implementations/Text_Edit_Demo/README.md)|[Java](./Android_Demos/java_implementations/Text_Edit_Demo/README.md)|
+|`Fibonacci series app 1`|This app demonstrates how to display fixed length Fibonacci series generated on the app screen and using the Log statements in android |[Kotlin](./Android_Demos/kotlin_implementations/Fib_TextView/README.md)|[Java](./Android_Demos/java_implementations/Fib_TextView/README.md)|
+|`Fibonacci series app 2`|This app demonstrates how to take length of Fibonacci series as user input in app using UI and display the generated Fibonacci series |[Kotlin](./Android_Demos/kotlin_implementations/Fib_EditText/README.md)|[Java](./Android_Demos/java_implementations/Fib_EditText/README.md)|
+|`Text Image Demo`|Simple app with text view and image view|[Kotlin](./Android_Demos/kotlin_implementations/Text_Image_demo/README.md)|[Java](./Android_Demos/java_implementations/Text_Image_Demo/README.md)|
+|`Slider Demo`|App to demonstrate use of slider which is called SeekBar in Android|[Kotlin](./Android_Demos/kotlin_implementations/Slider_Demo/README.md)|[Java](./Android_Demos/ava_implementations/Slider_Demo/README.md)|
+|`Sine Wave Demo 1`|App to demonstrate generating sine wave with fixed frequency|[Kotlin](./Android_Demos/kotlin_implementations/Sine_Wave_Demo1/README.md)|[Java](./Android_Demos/java_implementations/Sine_Wave_Demo1/README.md)|
+|`Sine Wave Demo 2`|App to demonstrate generating sine wave with variable frequency (uses buttons)||[Java](./Android_Demos/java_implementations/Sine_Wave_Demo2/README.md)|
+|`Sine Wave Demo 3`|App to demonstrate generating sine wave with variable frequency (uses SeekBar)||[Java](./Android_Demos/java_implementations/Sine_Wave_Demo3/README.md)|
+|`Sine Wave Demo 4`|App to demonstrate generating sine wave with variable frequency and gain (uses SeekBar)||[Java](./Android_Demos/java_implementations/Sine_Wave_Demo4/README.md)|
+|`Accelero-Sine wave`|A fun app. The frequency of the sine wave changes as you move and rotate your phone (uses accelerometer)||[Java](./Android_Demos/java_implementations/Accelerometer_Sine_Wave/README.md)|
 
 ---
